@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y6d+qc7gwAtOGTWxoca/8eknMt/NbmMma9rRCprRVIPiksYxrbY1am/S7EQmSOkxPhNfapeRpqeECSe/SJ0/Bg==",
+  "dgSpecHash": "b0g3Ajpj57MuvMS2mQxyix7vOw/PfZP7LuAKhV0swc66zl2X21bQIOx8T1FWxT26TsIO55XEGDWyleQURS1MZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\n01456488\\Desktop\\BeautyStore\\BeautyStore.csproj",
+  "projectFilePath": "C:\\Users\\n01456488\\Documents\\GitHub\\BeautyStoreProject\\BeautyStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\n01456488\\.nuget\\packages\\libuv\\1.10.0\\libuv.1.10.0.nupkg.sha512",
     "C:\\Users\\n01456488\\.nuget\\packages\\microsoft.applicationinsights\\2.4.0\\microsoft.applicationinsights.2.4.0.nupkg.sha512",

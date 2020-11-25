@@ -13131,11 +13131,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\n01456488\\Desktop\\BeautyStore\\BeautyStore.csproj",
+      "projectUniqueName": "C:\\Users\\n01456488\\Documents\\GitHub\\BeautyStoreProject\\BeautyStore.csproj",
       "projectName": "BeautyStore",
-      "projectPath": "C:\\Users\\n01456488\\Desktop\\BeautyStore\\BeautyStore.csproj",
+      "projectPath": "C:\\Users\\n01456488\\Documents\\GitHub\\BeautyStoreProject\\BeautyStore.csproj",
       "packagesPath": "C:\\Users\\n01456488\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\n01456488\\Desktop\\BeautyStore\\obj\\",
+      "outputPath": "C:\\Users\\n01456488\\Documents\\GitHub\\BeautyStoreProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
