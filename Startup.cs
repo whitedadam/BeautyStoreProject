@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using BeautyStore.Models;
+using BeautyStore.Models.ViewModels;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,20 +29,49 @@ namespace BeautyStore
         {
             services.AddDbContext<ApplicationDbContext>(options => 
                     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //        options.UseSqlServer("Data Source=CISVM-MSVRSQL\\FALL;Initial Catalog=N01456488;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"));
             services.AddTransient<IProductRepository, EFProductRepository>();
+            services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddTransient<IOrderRepository, EFOrderRepository>();
             services.AddMvc();
+            services.AddMemoryCache();
+            services.AddSession();
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-   
+
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
+            app.UseSession();
             app.UseMvc(routes => {
+
                 routes.MapRoute(
-                name: "default",
-                template: "{controller=Product}/{action=List}/{id?}");
+                    name: null,
+                    template: "{category}/Page{page:int}",
+                    defaults: new { controller = "Product", action = "List" }
+                );
+                routes.MapRoute(
+                    name: null,
+                    template: "Page{page:int}",
+                    defaults: new { controller = "Product", action = "List", page = 1 }
+                );
+                routes.MapRoute(
+                    name: null,
+                    template: "{category}",
+                    defaults: new { controller = "Product", action = "List", page = 1 }
+                );
+                routes.MapRoute(
+                    name: null,
+                    template: "",
+                    defaults: new { controller = "Product", action = "List", page = 1 }
+                );
+                
+                routes.MapRoute(name: null, template: "{controller}/{action}/{id?}");
+
             });
         }
         

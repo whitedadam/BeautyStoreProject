@@ -19,10 +19,11 @@ C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\bin\Debug\netcoreapp2.0\B
 C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\bin\Debug\netcoreapp2.0\BeautyStore.runtimeconfig.dev.json
 C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\bin\Debug\netcoreapp2.0\BeautyStore.dll
 C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\bin\Debug\netcoreapp2.0\BeautyStore.pdb
-C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\obj\Debug\netcoreapp2.0\BeautyStore.csprojAssemblyReference.cache
-C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\obj\Debug\netcoreapp2.0\BeautyStore.csproj.CoreCompileInputs.cache
 C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\obj\Debug\netcoreapp2.0\BeautyStore.AssemblyInfoInputs.cache
 C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\obj\Debug\netcoreapp2.0\BeautyStore.AssemblyInfo.cs
 C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\obj\Debug\netcoreapp2.0\BeautyStore.dll
 C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\obj\Debug\netcoreapp2.0\BeautyStore.pdb
 C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\obj\Debug\netcoreapp2.0\BeautyStore.genruntimeconfig.cache
+C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\bin\Debug\netcoreapp2.0\libman.json
+C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\obj\Debug\netcoreapp2.0\BeautyStore.csprojAssemblyReference.cache
+C:\Users\n01456488\Documents\GitHub\BeautyStoreProject\obj\Debug\netcoreapp2.0\BeautyStore.csproj.CoreCompileInputs.cache
