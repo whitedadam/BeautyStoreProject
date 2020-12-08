@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "g0PxLa6FUWu0YFHbk79YIp8TI/3QmZC4rCSK3LVNZZiTXwvYhgtiawtM4nwnWkTo6ftWulnzSyN0si+xOBKqwQ==",
+  "dgSpecHash": "2ZdX5nz4DLYTPaJZdUfBrQo5AKw/Ned54NTuqB+YVWuSI7t/tbjQqUkcoztQcTnSzTNm4vjbEz1LA2lY5ci6ig==",
   "success": true,
   "projectFilePath": "C:\\Users\\n01456488\\Documents\\GitHub\\BeautyStoreProject\\BeautyStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\n01456488\\.nuget\\packages\\bootstrap\\4.5.3\\bootstrap.4.5.3.nupkg.sha512",
     "C:\\Users\\n01456488\\.nuget\\packages\\bower\\1.3.11\\bower.1.3.11.nupkg.sha512",
-    "C:\\Users\\n01456488\\.nuget\\packages\\jquery\\3.0.0\\jquery.3.0.0.nupkg.sha512",
+    "C:\\Users\\n01456488\\.nuget\\packages\\jquery\\3.5.1\\jquery.3.5.1.nupkg.sha512",
+    "C:\\Users\\n01456488\\.nuget\\packages\\jquery.validation\\1.19.2\\jquery.validation.1.19.2.nupkg.sha512",
     "C:\\Users\\n01456488\\.nuget\\packages\\libuv\\1.10.0\\libuv.1.10.0.nupkg.sha512",
     "C:\\Users\\n01456488\\.nuget\\packages\\microsoft.applicationinsights\\2.4.0\\microsoft.applicationinsights.2.4.0.nupkg.sha512",
     "C:\\Users\\n01456488\\.nuget\\packages\\microsoft.applicationinsights.aspnetcore\\2.1.1\\microsoft.applicationinsights.aspnetcore.2.1.1.nupkg.sha512",
@@ -164,6 +165,7 @@
     "C:\\Users\\n01456488\\.nuget\\packages\\microsoft.identitymodel.protocols\\2.1.4\\microsoft.identitymodel.protocols.2.1.4.nupkg.sha512",
     "C:\\Users\\n01456488\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\2.1.4\\microsoft.identitymodel.protocols.openidconnect.2.1.4.nupkg.sha512",
     "C:\\Users\\n01456488\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.1.4\\microsoft.identitymodel.tokens.5.1.4.nupkg.sha512",
+    "C:\\Users\\n01456488\\.nuget\\packages\\microsoft.jquery.unobtrusive.validation\\3.2.11\\microsoft.jquery.unobtrusive.validation.3.2.11.nupkg.sha512",
     "C:\\Users\\n01456488\\.nuget\\packages\\microsoft.net.http.headers\\2.0.1\\microsoft.net.http.headers.2.0.1.nupkg.sha512",
     "C:\\Users\\n01456488\\.nuget\\packages\\microsoft.netcore.app\\2.0.0\\microsoft.netcore.app.2.0.0.nupkg.sha512",
     "C:\\Users\\n01456488\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.0.0\\microsoft.netcore.dotnetapphost.2.0.0.nupkg.sha512",

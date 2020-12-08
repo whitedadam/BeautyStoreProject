@@ -1,8 +1,19 @@
 ﻿@model CartIndexViewModel  
 
 <h2>Your cart</h2>
-
-<table class="table table-bordered table-striped">
+<style>
+    table.table-bordered > thead > tr > th 
+    {
+        border: 1px solid darkslategrey;
+    }
+    table.table-bordered > tbody > tr > td {
+        border: 1px solid darkslategrey;
+    }
+    table.table-bordered > tfoot > tr > td {
+        border: 1px solid darkslategrey;
+    }
+</style>
+<table class="table table-bordered">
     <thead>
         <tr>
             <th class="text-center">Quantity</th>

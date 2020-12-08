@@ -1,20 +1,30 @@
 ﻿@model IEnumerable<string>
 
-<a class="btn btn-outline-dark btn-block m-2"
+<style>
+    .btn 
+    {
+        font-weight: 500;
+    }
+    .btn-primary
+    {
+        background-color: darkgray !important;
+        color: ghostwhite;    
+    }
+</style>
+<a class=" btn btn-outline-dark btn-block m-2"
    asp-action="List"
    asp-controller="Product"
    asp-route-category="">
-    Home
+    Catalog Home
 </a>
 
 @foreach (string category in Model)
 {
-     <a class="btn btn-block
-        @(category == ViewBag.SelectedCategory ? "btn-primary": "btn-default")"
+     <a class="btn btn-outline-dark btn-block m-2 @(category == ViewBag.SelectedCategory ? "btn-primary": "btn-default")"
         asp-action="List"
         asp-controller="Product"
         asp-route-category="@category"
         asp-route-page="1">
-        @category
+            @category
     </a>
 }

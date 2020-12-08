@@ -2,19 +2,53 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="~/wwwroot/css/*.min.css" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/*.min.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" asp-href-include="lib/bootstrap/dist/css/*.min.css" />
+    <link rel="stylesheet" asp-href-include="lib/fontawesome/web-fonts-with-css/css/*.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <title>Beauty Store</title>
+    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />*@
+    <title>Hit Beauty</title>
+    <style>
+        body 
+        {
+            background-image: linear-gradient(#a8edea, #fed6e3);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .navbar-custom
+        {
+            background-color: lightpink;
+            opacity: .9;
+        }
+        .navbar-brand {
+            color: darkslategrey !important; 
+            border-bottom: thin, darkslategrey;
+            font-weight: 500 !important;
+            font-family: 'Brush Script MT';
+            font-size: 30px !important;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-link{
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-inverse bg-info justify-content-between">
-        <a class="navbar-brand text-white" href="#">BEAUTY STORE</a>
-        <div class="float-right">
-            @await Component.InvokeAsync("CartSummary")
-        </div>
-    </nav>
+    <ul class="navbar navbar-dark navbar-custom flex-grow-1 border-bottom border-dark justify-content-between">
+        <li class="d-inline-flex">
+            <a class="navbar-brand" href="#">HIT BEAUTY</a>
+            <a class="nav-link" style="color:ghostwhite;" asp-action="About" asp-controller="Misc">About</a>
+            <a class="nav-link" style="color:ghostwhite;" asp-action="Contact" asp-controller="Misc">Contact</a>
+        <li class="navbar justify-content-end">
+            <a class="float-right">
+                @await Component.InvokeAsync("CartSummary")
+            </a>
+        </li>
+    </ul>
     <div class="container">
         <div class="row">
             <div class="col col-md-3">

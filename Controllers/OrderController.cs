@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BeautyStore.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BeautyStore.Controllers
 {
@@ -16,6 +17,24 @@ namespace BeautyStore.Controllers
             repository = repoService;
             cart = cartService;
         }
+        
+        [Authorize]
+        public ViewResult List() => View(repository.Orders.Where(o => !o.Shipped));
+        
+        [HttpPost]
+        [Authorize]
+        public IActionResult MarkShipped(int orderID)
+        {
+            Order order = repository.Orders
+                    .FirstOrDefault(o => o.OrderID == orderID);
+            if (order != null)
+            {
+                order.Shipped = true;
+                repository.SaveOrder(order);
+            }
+            return RedirectToAction(nameof(List));
+        }
+
         public ViewResult Checkout() => View(new Order());
         [HttpPost]
         public IActionResult Checkout(Order order)

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" asp-href-include="lib/bootstrap/dist/css/*.min.css" />
+    <title>@ViewBag.Title</title>
+    <style>
+        .input-validation-error 
+        {
+            border-color: red;
+            background-color: #fee;
+        }
+        body 
+        {
+            background-color: #ffa69e;
+            background-image: linear-gradient(315deg, #ffa69e 0%, #5d4954 74%);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script asp-src-include="lib/jquery/**/jquery.min.js"></script>
+    <script asp-src-include="lib/jquery-validation/**/jquery.validate.min.js"></script>
+    <script asp-src-include="lib/jquery-validation-unobtrusive/**/*.min.js"></script>
+</head>
+<body>
+    <ul class="navbar navbar-inverse navbar-light bg-dark flex-grow-1 justify-content-between">
+        <li class="d-inline-flex">
+            <a class="navbar-brand" style="color:ghostwhite;border-bottom:thin, darkslategrey;font-weight:500;font-family:monospace" href="#">HIT BEAUTY ADMIN</a>
+            <a class="nav-link" style="color:ghostwhite;" asp-action="Index" asp-controller="Admin">Product Index</a>
+            <a class="nav-link" style="color:ghostwhite;" asp-action="List" asp-controller="Order">Ship Orders</a>
+            <a class="nav-link" style="color:ghostwhite;" asp-action="Create" asp-controller="Account">Create New Admin</a>
+        </li>
+        <li class="navbar justify-content-end">
+            <a class="btn btn-sm btn-dark float-right" asp-action="Logout" asp-controller="Account">Log Out</a>
+        </li>
+    </ul>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h4>@ViewBag.Title</h4>
+                    <a class="btn btn-sm btn-dark float-right" asp-action="Logout" asp-controller="Account">Log Out</a>
+                </div>
+                <div class="card-body">
+                    @if (TempData["message"] != null)
+                    {
+                        <div class="alert alert-success">@TempData["message"]</div>
+                    }
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+</body>
+</html>

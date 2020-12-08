@@ -8,9 +8,6 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using BeautyStore.Models.ViewModels;
-using System.Collections.Generic;
-
-
 
 namespace BeautyStore.Infrastructure
 {

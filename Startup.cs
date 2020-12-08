@@ -11,6 +11,8 @@ using BeautyStore.Models;
 using BeautyStore.Models.ViewModels;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+
 
 namespace BeautyStore
 {
@@ -35,6 +37,9 @@ namespace BeautyStore
             services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddTransient<IOrderRepository, EFOrderRepository>();
+            services.AddIdentity<AppUser, IdentityRole<Guid>>()
+                    .AddEntityFrameworkStores<ApplicationDbContext>()
+                    .AddDefaultTokenProviders();
             services.AddMvc();
             services.AddMemoryCache();
             services.AddSession();
@@ -46,6 +51,7 @@ namespace BeautyStore
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
+            app.UseAuthentication();
             app.UseSession();
             app.UseMvc(routes => {
 
